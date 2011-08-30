@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@color/background">
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:gravity="center" android:paddingLeft="10dp"
+		android:paddingRight="10dp">
+
+		<TextView android:id="@+id/fname" android:text="First Name:"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<EditText android:id="@+id/edtxt_firstname" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+
+		<TextView android:id="@+id/lname" android:text="Last Name:"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<EditText android:id="@+id/edtxt_lastname" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+
+		<TextView android:id="@+id/email" android:text="Email:"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<EditText android:id="@+id/edtxt_email" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+
+		<TextView android:id="@+id/passw" android:text="Password:"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<EditText android:id="@+id/edtxt_password" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:password="true"/>
+
+		<Button android:id="@+id/btn_acc" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Create Account" />
+
+	</LinearLayout>
+
+</LinearLayout>

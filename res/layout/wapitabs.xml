@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@color/background">
+
+	<TabHost android:id="@+id/tabhost" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+			<TabWidget android:id="@android:id/tabs"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:gravity="bottom" />
+
+			<FrameLayout android:id="@android:id/tabcontent"
+				android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+				<!-- *********************************************************************************************************************** -->
+				<!-- Todays Challenge Tab -->
+				<LinearLayout android:layout_width="fill_parent"
+					android:orientation="vertical" android:id="@+id/todayschllng"
+					android:layout_height="fill_parent" android:weightSum="100">
+					<LinearLayout android:layout_weight="30"
+						android:weightSum="100" android:orientation="vertical"
+						android:layout_width="fill_parent" android:layout_height="fill_parent">
+						<ImageView android:id="@+id/clue" android:layout_width="fill_parent"
+							android:layout_height="fill_parent" android:layout_weight="15" />
+						<TextView android:text="Identify" android:layout_width="fill_parent"
+							android:gravity="center" android:textSize="15sp"
+							android:layout_height="fill_parent" android:layout_weight="45" />
+						<EditText android:hint="Enter Location Identity"
+							android:layout_weight="40" android:id="@+id/etlocation"
+							android:layout_width="fill_parent" android:layout_height="fill_parent"
+							android:layout_gravity="bottom" />
+					</LinearLayout>
+					<LinearLayout android:layout_weight="70"
+						android:orientation="horizontal" android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:gravity="center_vertical"
+						>
+						<Button android:layout_width="fill_parent"
+							android:layout_height="wrap_content" android:text="Submit"
+							android:drawableTop="@drawable/submit"
+							android:background="@null"
+							android:layout_weight="1" />
+
+						<CheckBox android:text="Share" android:id="@+id/cb_share"
+							android:layout_width="fill_parent" android:layout_height="wrap_content"
+							android:layout_weight="1" />
+
+						<Button android:id="@+id/btn_facebook" android:layout_width="fill_parent"
+							android:layout_height="wrap_content" android:layout_weight="1"
+							android:background="@null"
+							android:drawableTop="@drawable/facebook" />
+
+						<Button android:id="@+id/btn_twitter" android:layout_width="fill_parent"
+							android:layout_height="wrap_content" android:layout_weight="1"
+							android:background="@null"
+							android:drawableTop="@drawable/twitter" />
+					</LinearLayout>
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:id="@+id/tvlocation"
+						android:gravity="center" android:textStyle="bold" 
+						android:textSize="16sp"
+						android:text="You are here, Right Now" />
+				</LinearLayout>
+
+				<!-- *********************************************************************************************************************** -->
+				<!-- Past Challange Tab -->
+
+				<LinearLayout android:id="@+id/pastchllng"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:paddingTop="5dp" android:paddingLeft="10dp"
+					android:paddingRight="10dp">
+					<ListView 
+						    android:id="@+id/android:list" 
+						    android:layout_height="wrap_content" 
+						    android:layout_width="fill_parent"></ListView>
+					<TextView android:text="Kenya, Nairobi, Muindi Mbingu Street"
+						android:id="@+id/textView1" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_gravity="bottom|center"
+						android:textStyle="bold" android:textSize="16sp" />
+				</LinearLayout>
+				<!-- *********************************************************************************************************************** -->
+				<!-- Me Tab -->
+				<LinearLayout android:id="@+id/me"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:paddingTop="5dp" android:paddingLeft="10dp"
+					android:paddingRight="10dp">
+					<ListView 
+					    android:id="@+id/android:list" 
+					    android:layout_height="wrap_content" 
+					    android:layout_width="fill_parent"></ListView>
+
+					<TextView android:text="Kenya, Nairobi, Muindi Mbingu Street"
+						android:id="@+id/textView1" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:layout_gravity="bottom|center"
+						android:textStyle="bold" android:textSize="16sp" />
+				</LinearLayout>
+
+
+			</FrameLayout>
+		</LinearLayout>
+	</TabHost>
+</LinearLayout>
