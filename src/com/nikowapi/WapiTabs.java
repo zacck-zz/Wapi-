@@ -1,6 +1,7 @@
 package com.nikowapi;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TabHost;
 
@@ -18,7 +19,8 @@ public class WapiTabs extends Activity{
 		tabz.setup();
 		
 		TabHost.TabSpec spec =tabz.newTabSpec("Tab One");
-		spec.setContent(R.id.todayschllng);
+		//Intent intent = new Intent(WapiTabs.this, )
+		//spec.setContent(intent);
 		spec.setIndicator("Todays Challange");
 		tabz.addTab(spec);
 		
